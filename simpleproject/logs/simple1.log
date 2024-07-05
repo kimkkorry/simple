@@ -1,0 +1,33 @@
+2024-07-02 23:41:14.143  INFO 23592 --- [restartedMain] c.example.demo.SimpleprojectApplication  : Starting SimpleprojectApplication using Java 17.0.9 with PID 23592 (C:\Users\kimbo\Documents\Newsimple\simpleproject\bin\main started by kimbo in C:\Users\kimbo\Documents\Newsimple\simpleproject)
+2024-07-02 23:41:14.151  INFO 23592 --- [restartedMain] c.example.demo.SimpleprojectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-07-02 23:41:14.217  INFO 23592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-02 23:41:14.218  INFO 23592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-02 23:41:15.564  INFO 23592 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-02 23:41:15.656  INFO 23592 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+2024-07-02 23:41:16.487  INFO 23592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-02 23:41:16.506  INFO 23592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-02 23:41:16.507  INFO 23592 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-02 23:41:16.705  INFO 23592 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-02 23:41:16.706  INFO 23592 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2487 ms
+2024-07-02 23:41:16.926  INFO 23592 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-02 23:41:17.043  INFO 23592 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-02 23:41:17.104  INFO 23592 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-02 23:41:17.294  INFO 23592 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-02 23:41:18.027  INFO 23592 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52b79bab
+2024-07-02 23:41:18.030  INFO 23592 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-02 23:41:18.109  WARN 23592 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-02 23:41:18.110  WARN 23592 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-07-02 23:41:18.551  INFO 23592 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-02 23:41:19.722  INFO 23592 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-02 23:41:19.791 DEBUG 23592 --- [restartedMain] org.hibernate.SQL                        : create table userframe (frame_id bigint not null auto_increment, frame_height integer not null, frame_name varchar(255), frame_width integer not null, user_id varchar(255), user_num bigint, primary key (frame_id)) engine=InnoDB
+2024-07-02 23:41:19.829 DEBUG 23592 --- [restartedMain] org.hibernate.SQL                        : create table userinfo (user_num bigint not null auto_increment, user_answer varchar(255), user_id varchar(255), user_password varchar(255), user_question varchar(255), primary key (user_num)) engine=InnoDB
+2024-07-02 23:41:19.863 DEBUG 23592 --- [restartedMain] org.hibernate.SQL                        : create table user_json (json_id bigint not null auto_increment, json_file JSON, user_num bigint, primary key (json_id)) engine=InnoDB
+2024-07-02 23:41:19.904  INFO 23592 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-02 23:41:20.658  WARN 23592 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-02 23:41:22.303  INFO 23592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-02 23:41:22.345  INFO 23592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-02 23:41:22.354  INFO 23592 --- [restartedMain] c.example.demo.SimpleprojectApplication  : Started SimpleprojectApplication in 9.256 seconds (process running for 10.892)
+2024-07-02 23:41:25.650  INFO 23592 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-02 23:41:25.675  INFO 23592 --- [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-02 23:41:25.678  INFO 23592 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-02 23:41:25.734  INFO 23592 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
